@@ -1,0 +1,258 @@
+$blue_color: #0033a0;
+$aqua_color: #00aec7;
+$red_color: #f9423a;
+$green_color: #78be20;
+
+span {
+  display: inline-block;
+}
+
+.icon-lg {
+  svg {
+    height: 26px;
+    vertical-align: middle;
+    width: 26px;
+  }
+}
+
+.icon-m {
+  svg {
+    height: 22px;
+    vertical-align: middle;
+    width: 22px;
+  }
+}
+
+.icon-s {
+  svg {
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+  }
+}
+
+.icon-xs {
+  svg {
+    height: 14px;
+    vertical-align: middle;
+    width: 14px;
+  }
+}
+
+.color-blue {
+  svg {
+    path {
+      stroke: $blue_color;
+
+      &.fill-blue {
+        fill: $blue_color;
+      }
+    }
+
+    circle {
+      &.stroke-blue {
+        stroke: $blue_color;
+      }
+      &.fill-blue {
+        fill: $blue_color;
+      }
+    }
+  }
+
+  .icon-disabled {
+    svg {
+      path {
+        stroke: $light_gray_color;
+
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+
+      circle {
+        &.stroke-blue {
+          stroke: $light_gray_color;
+        }
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+    }
+  }
+}
+
+.color-aqua {
+  svg {
+    path {
+      stroke: $aqua_color;
+
+      &.fill-aqua {
+        fill: $aqua_color;
+      }
+    }
+
+    circle {
+      &.stroke-aqua {
+        stroke: $aqua_color;
+      }
+      &.fill-aqua {
+        fill: $aqua_color;
+      }
+    }
+  }
+
+  &.icon-disabled {
+    svg {
+      path {
+        stroke: $light_gray_color;
+
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+
+      circle {
+        &.stroke-blue {
+          stroke: $light_gray_color;
+        }
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+    }
+  }
+}
+
+.color-red {
+  svg {
+    path {
+      stroke: $red_color;
+
+      &.fill-red {
+        fill: $red_color;
+      }
+    }
+
+    circle {
+      &.stroke-red {
+        stroke: $red_color;
+      }
+      &.fill-red {
+        fill: $red_color;
+      }
+    }
+  }
+
+  &.icon-disabled {
+    svg {
+      path {
+        stroke: $light_gray_color;
+
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+
+      circle {
+        &.stroke-blue {
+          stroke: $light_gray_color;
+        }
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+    }
+  }
+}
+
+.color-green {
+  svg {
+    path {
+      stroke: $green_color;
+
+      &.fill-green {
+        fill: $green_color;
+      }
+    }
+
+    circle {
+      &.stroke-green {
+        stroke: $green_color;
+      }
+      &.fill-green {
+        fill: $green_color;
+      }
+    }
+  }
+
+  &.icon-disabled {
+    svg {
+      path {
+        stroke: $light_gray_color;
+
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+
+      circle {
+        &.stroke-blue {
+          stroke: $light_gray_color;
+        }
+        &.fill-blue {
+          fill: $light_gray_color;
+        }
+      }
+    }
+  }
+}
+
+.edit,
+.trash {
+  &.icon-disabled {
+    &.color-blue,
+    &.color-aqua,
+    &.color-green,
+    &.color-red {
+      svg {
+        path {
+          stroke: none;
+          fill: $light_gray_color;
+        }
+      }
+    }
+  }
+
+  &.color-blue {
+    svg {
+      path {
+        stroke: none;
+        fill: $blue_color;
+      }
+    }
+  }
+  &.color-aque {
+    svg {
+      path {
+        stroke: none;
+        fill: $aqua_color;
+      }
+    }
+  }
+  &.color-red {
+    svg {
+      path {
+        stroke: none;
+        fill: $red_color;
+      }
+    }
+  }
+  &.color-green {
+    svg {
+      path {
+        stroke: none;
+        fill: $green_color;
+      }
+    }
+  }
+}
